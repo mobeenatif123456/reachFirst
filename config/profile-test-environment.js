@@ -1,6 +1,6 @@
 module.exports = {
   
-  url: 'https://app03.convotest.app',
+  url: 'https://demo-web.worktually.com/',
 
   signupDomain: 'guerrillamail.info', // => /test/specs/signup
   
