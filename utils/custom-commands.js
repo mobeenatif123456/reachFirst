@@ -10,6 +10,8 @@ class CustomCommand {
   login(url, email, password) {
     browser.maximizeWindow();
     browser.url(url);
+
+    /*
     Util.setValue(repo.emailInputField, email);
     Util.setValue(repo.passwordInputField, password);
     Util.takeScreenshot();
@@ -17,6 +19,8 @@ class CustomCommand {
     Util.pause(10);
     Util.waitForDisplayed(repo.whatsNew);
     Util.waitForDisplayed(repo.privateGroupsDisplayed);
+
+    */
     return true;
   }
 
