@@ -1,6 +1,6 @@
 module.exports = {
   
-  url: 'https://demo-web.worktually.com/',
+  url: 'https://qa-web.worktually.com/',
 
   signupDomain: 'guerrillamail.info', // => /test/specs/signup
   
