@@ -8,11 +8,18 @@ describe ('login', function () {
   // Author: Mobeen Atif
   // Total Test Cases: 01
   
-  it ('should be able to login to the application', function () {
+  it ('employer should be able to login to the application with valid credentials', function () {
   
-    CustomCommand.login(profile.url, profile.network1Admin1.email, profile.network1Admin1.password);
+    browser.maximizeWindow();
+    browser.url(profile.url);
+    Util.click(repo.employerLoginLink);
+    CustomCommand.login(profile.employer1.email, profile.employer1.password);
     Util.takeScreenshot();
-   
+    Util.waitForDisplayed(repo.employerLoginVerification);
+    Util.click(repo.profileImageLink);
+    Util.click(repo.logoutButton);
+    Util.waitForDisplayed(repo.employerLoginLink);
+
   });
 
 });

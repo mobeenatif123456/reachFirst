@@ -7,20 +7,13 @@ const path = require('path');
 
 class CustomCommand {
 
-  login(url, email, password) {
-    browser.maximizeWindow();
-    browser.url(url);
-
-    /*
+  login(email, password) {
+  
     Util.setValue(repo.emailInputField, email);
     Util.setValue(repo.passwordInputField, password);
     Util.takeScreenshot();
-    Util.click(repo.signInButton);
+    Util.click(repo.loginButton);
     Util.pause(10);
-    Util.waitForDisplayed(repo.whatsNew);
-    Util.waitForDisplayed(repo.privateGroupsDisplayed);
-
-    */
     return true;
   }
 
