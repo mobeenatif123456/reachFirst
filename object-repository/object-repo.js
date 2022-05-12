@@ -7,6 +7,7 @@ module.exports = {
   employerLoginVerification: ({elementName: 'loginButton', elementPath:`//p[text()='POST A JOB']`}),
   profileImageLink: ({elementName: 'profileImageLink', elementPath:`//div[@class='MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault'] | //div[@class='MuiAvatar-root MuiAvatar-circular']/img`}),
   logoutButton:({elementName: 'logoutButton', elementPath:`//p[text()='Log out']`}),
+  invalidEmailOrPassword: ({elementName: 'invalidEmailOrPassword', elementPath:`//div[text()='Invalid email or password']`}),
   networkandUserchatVerificationInBigChat: (networkName, userName) => ({elementName: 'networkandUserchatVerificationInBigChat', elementPath:`//div[@class='separator-title' and text()='${networkName}']/..//div[@class='chat-list-item-user-name' and text()='${userName}']`}),
   
 

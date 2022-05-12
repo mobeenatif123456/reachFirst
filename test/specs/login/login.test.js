@@ -6,7 +6,7 @@ let CustomCommand = require('../../../utils/custom-commands');
 describe ('login', function () {
 
   // Author: Mobeen Atif
-  // Total Test Cases: 01
+  // Total Test Cases: 02
   
   it ('employer should be able to login to the application with valid credentials', function () {
   
@@ -20,6 +20,17 @@ describe ('login', function () {
     Util.click(repo.logoutButton);
     Util.waitForDisplayed(repo.employerLoginLink);
 
+  });
+
+  it ('employer should not be able to login to the application with Invalid credentials', function () {
+  
+    browser.url(profile.url);
+    Util.click(repo.employerLoginLink);
+    CustomCommand.login(profile.employer1.email, '123456');
+    Util.takeScreenshot();
+    Util.waitForNotDisplayed(repo.employerLoginVerification);
+    Util.waitForDisplayed(repo.invalidEmailOrPassword);
+    
   });
 
 });
