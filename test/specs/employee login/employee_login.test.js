@@ -30,7 +30,25 @@ describe ('employee login', function () {
     CustomCommand.login(profile.employee1.email, '123456');
     Util.takeScreenshot();
     Util.waitForDisplayed(repo.invalidEmailOrPassword);
+    Util.click(repo.closeButton);
     
   });
+
+  it ('verify that user cannot able to login if fields are left blank and login button is clicked', function () {
+  
+    Util.clearValue(repo.emailInputField);
+    Util.clearValue(repo.passwordInputField);
+    Util.takeScreenshot();
+    Util.click(repo.emailInputField);
+    Util.click(repo.passwordInputField);
+    Util.click(repo.loginButton);
+    Util.pause(3);
+    Util.waitForDisplayed(repo.enterEmailAddress);
+    Util.waitForDisplayed(repo.enterPassword);
+    Util.waitForNotDisplayed(repo.jobLists);
+
+  });
+
+
 
 });
