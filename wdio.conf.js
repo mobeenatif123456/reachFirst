@@ -20,7 +20,8 @@ exports.config = {
   // directory is where your package.json resides, so `wdio` will be called from there.
   
   suites: {
-    suite0: ['./test/specs/login/**/*.js'],
+    suite0: ['./test/specs/employer login/**/*.js'],
+    suite1: ['./test/specs/employee login/**/*.js'],
     shareReport: ['./test/misc/share-report/**/*.js']
 
   },

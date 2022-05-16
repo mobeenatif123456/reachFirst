@@ -1,6 +1,7 @@
 module.exports = {
 
   employerLoginLink: ({ elementName: 'employerLoginLink', elementPath: '//p[text()="I want to hire"]/..//a[text()="Login"]' }),
+  employeeLoginLink: ({ elementName: 'employeeLoginLink', elementPath: '//p[text()="I want to work"]/..//a[text()="Login"]' }),
   emailInputField: ({elementName: 'emailInputField', elementPath:`//input[@name='email']`}),
   passwordInputField: ({elementName: 'passwordInputField', elementPath:`//input[@name='password']`}),
   loginButton: ({elementName: 'loginButton', elementPath:`//p[text()='LOGIN']`}),
@@ -8,6 +9,7 @@ module.exports = {
   profileImageLink: ({elementName: 'profileImageLink', elementPath:`//div[@class='MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault'] | //div[@class='MuiAvatar-root MuiAvatar-circular']/img`}),
   logoutButton:({elementName: 'logoutButton', elementPath:`//p[text()='Log out']`}),
   invalidEmailOrPassword: ({elementName: 'invalidEmailOrPassword', elementPath:`//div[text()='Invalid email or password']`}),
+  jobLists: ({elementName: 'filterJobs', elementPath:`//p[contains(text(),'Jobs List')]`}),
   networkandUserchatVerificationInBigChat: (networkName, userName) => ({elementName: 'networkandUserchatVerificationInBigChat', elementPath:`//div[@class='separator-title' and text()='${networkName}']/..//div[@class='chat-list-item-user-name' and text()='${userName}']`}),
   
 
