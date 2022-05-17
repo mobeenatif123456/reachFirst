@@ -22,6 +22,7 @@ exports.config = {
   suites: {
     suite0: ['./test/specs/employer login/**/*.js'],
     suite1: ['./test/specs/employee login/**/*.js'],
+    suite2: ['./test/specs/employee login validations/**/*.js'],
     shareReport: ['./test/misc/share-report/**/*.js']
 
   },

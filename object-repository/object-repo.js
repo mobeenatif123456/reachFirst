@@ -11,9 +11,12 @@ module.exports = {
   invalidEmailOrPassword: ({elementName: 'invalidEmailOrPassword', elementPath:`//div[text()='Invalid email or password']`}),
   jobLists: ({elementName: 'filterJobs', elementPath:`//p[contains(text(),'Jobs List')]`}),
   closeButton: ({elementName: 'closeButton', elementPath:`//button[@title='Close']`}),
-  enterEmailAddress: ({elementName: 'enterEmailAddress', elementPath:`//p[contains(text(),'Enter a valid email address')]`}),
-  enterPassword: ({elementName: 'enterPassword', elementPath:`//p[contains(text(),'Enter the password')]`}),
+  enterEmailAddress: ({elementName: 'enterEmailAddress', elementPath:`//p[contains(text(),'Provide an email address')]`}),
+  enterPassword: ({elementName: 'enterPassword', elementPath:`//p[contains(text(),'Provide a password')]`}),
   networkandUserchatVerificationInBigChat: (networkName, userName) => ({elementName: 'networkandUserchatVerificationInBigChat', elementPath:`//div[@class='separator-title' and text()='${networkName}']/..//div[@class='chat-list-item-user-name' and text()='${userName}']`}),
+  passwordFieldAsteriks: ({elementName: 'passwordFieldAsteriks', elementPath:`//input[@name='password' and @type='password']`}),
+  passwordShowOption: ({elementName: 'passwordShowOption', elementPath:`//span[@class='MuiIconButton-label']`}),
+  passwordfieldText: ({elementName: 'passwordfieldText', elementPath:`//input[@name='password' and @type='text']`}),
   
 
 }
