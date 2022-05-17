@@ -6,7 +6,7 @@ let CustomCommand = require('../../../utils/custom-commands');
 describe ('employee login validations', function () {
 
   // Author: Mobeen Atif
-  // Total Test Cases: 01
+  // Total Test Cases: 04
   
 
   it ('verify that user cannot able to login if fields are left blank and login button is clicked', function () {
