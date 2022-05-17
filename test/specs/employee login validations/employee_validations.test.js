@@ -3,7 +3,7 @@ const profile = require('../../../config/profile');
 const Util = require('../../../utils/utils');
 let CustomCommand = require('../../../utils/custom-commands');
 
-describe ('employee login', function () {
+describe ('employee login validations', function () {
 
   // Author: Mobeen Atif
   // Total Test Cases: 01
