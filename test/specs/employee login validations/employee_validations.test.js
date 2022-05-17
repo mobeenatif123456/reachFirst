@@ -45,6 +45,20 @@ describe ('employee login validations', function () {
 
   });
 
+  it ('verify that login button functionality is working on Enter button', function () {
+  
+    Util.clearValue(repo.emailInputField);
+    Util.clearValue(repo.passwordInputField);
+    Util.setValue(repo.emailInputField,profile.employee1.email);
+    Util.setValue(repo.passwordInputField,profile.employee1.password);
+
+    Util.keys('Enter');
+    Util.waitForDisplayed(repo.jobLists);
+
+  });
+
+  
+
 
 
 
